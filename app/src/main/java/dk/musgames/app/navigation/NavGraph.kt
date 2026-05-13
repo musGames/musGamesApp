@@ -13,7 +13,7 @@ import dk.musgames.app.ui.login.LoginScreen
 import dk.musgames.app.ui.navigation.NAVIGATIONPAGE
 import dk.musgames.app.ui.settings.SettingsPage
 import dk.musgames.app.ui.userpage.UserPage
-
+import dk.musgames.app.ui.login.ForgotPasswordScreen
 object Routes {
     const val LOGIN           = "login"
     const val HUB             = "NavigationPage"
@@ -43,6 +43,12 @@ fun musgamesNav() {
                 onForgotPassword = {
                     nav.navigate(Routes.FORGOT_PASSWORD)
                 }
+            )
+        }
+        /* ---------- Forgot Password ---------- */
+        composable(Routes.FORGOT_PASSWORD) {
+            ForgotPasswordScreen(
+                onBack = { nav.popBackStack() }
             )
         }
 
