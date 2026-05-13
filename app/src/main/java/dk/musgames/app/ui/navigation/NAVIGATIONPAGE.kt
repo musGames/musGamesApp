@@ -77,7 +77,7 @@ fun NAVIGATIONPAGE(
                 }
 
                 Image(
-                    painter = painterResource(R.drawable.ic_logo),
+                    painter = painterResource(R.drawable.musgames_no_bg),
                     contentDescription = "App logo",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier

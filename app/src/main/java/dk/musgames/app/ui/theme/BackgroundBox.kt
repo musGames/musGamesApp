@@ -29,7 +29,7 @@ val LocalIsDarkBackground = compositionLocalOf { true }
 
 @Composable
 fun BackgroundBox(
-    resId: Int = R.drawable.bg_retro,
+    resId: Int = R.drawable.musgames_no_bg,
     modifier: Modifier = Modifier,
     content: @Composable BoxScope.() -> Unit
 ) {
